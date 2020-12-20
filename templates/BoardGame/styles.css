@@ -140,6 +140,10 @@
         grid-template-rows: repeat(3, 80px);
     }
 
+    .squares {
+        font-size: 36px;
+    }
+
     .footer .draw {
         font-size: 56px;
     }
