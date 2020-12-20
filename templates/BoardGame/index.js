@@ -8,6 +8,8 @@ export default function BoardGame() {
   const [currentPlayer, setCurrentPlayer] = useState("X");
   const [winner, setWinner] = useState("");
 
+  verifyDraw();
+
   useEffect(() => {
     verifyWinner()
   }, [board])
@@ -54,12 +56,10 @@ export default function BoardGame() {
         console.log("X venceu")
       }
     })
-
-    verifyDraw();
   }
 
   function verifyDraw() {
-    if (board.every(item => item !== ""))
+    if (board.every(item => item !== "") && winner === null)
       setWinner("D")
   }
 
