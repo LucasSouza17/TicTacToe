@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../templates/BoardGame/styles.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
